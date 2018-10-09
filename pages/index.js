@@ -5,7 +5,14 @@ class Index extends React.Component {
     render() {
         return(
             <div>
-                <Layout>Hello oke</Layout>
+                <Layout>
+                <div className="container">
+                    <div className="row">
+                        <div className="col s1">sidebar</div>
+                        <div className="col s1">body</div>
+                    </div>
+                </div>
+                </Layout>
             </div>
         )
     }

@@ -1,32 +1,13 @@
 import React from 'react'
-
-export class Navbar extends React.Component {
-    render () {
-        return(
-            <div>
-            Navbar
-            </div>
-        )
-    }
-}
-
-export class Footer extends React.Component {
-    render () {
-        return(
-            <div>
-            Footer
-            </div>
-        )
-    }
-}
+import {Navbar, Footer} from './nav'
 
 class Layout extends React.Component {
     render() {
         return(
             <div>
-                <Navbar></Navbar>
+                <Navbar />
                 {this.props.children}
-                <Footer></Footer>
+                <Footer />
             </div>
         )
     }
