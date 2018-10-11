@@ -21,6 +21,10 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <script src="static/js/materialize.min.js"></script>
+        <script>
+          M.AutoInit();
+        </script>
       </html>
     )
   }
