@@ -19,15 +19,15 @@ class Layout extends React.Component {
 
     render() {
         return(
-            <div>
+            <body className="custom_class">
                 <Navbar />
-                <div className="container">
+                <main className="container">
                     <div className="row">
                         {this.defaultBody()}
                     </div>
-                </div>
+                </main>
                 <Footer />
-            </div>
+            </body>
         )
     }
 }

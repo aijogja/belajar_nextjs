@@ -15,12 +15,13 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           <link rel="stylesheet" href="static/css/materialize.min.css" />
+          <link rel="stylesheet" href="static/css/style.css" />
           <style>{`body { margin: 0 } /* custom! */`}</style>
         </Head>
-        <body className="custom_class">
-          <Main />
-          <NextScript />
-        </body>
+
+        <Main />
+        <NextScript />
+
         <script src="static/js/materialize.min.js"></script>
         <script>
           M.AutoInit();
