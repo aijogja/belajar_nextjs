@@ -1,13 +1,12 @@
 import React from 'react'
+import Link from 'next/link'
 
 export const Navbar = () => (
   <nav>
     <div className="container nav-wrapper">
       <a href="/" className="brand-logo">Warungku</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><Link href="produk"><a>Produk</a></Link></li>
       </ul>
     </div>
   </nav>
@@ -19,9 +18,7 @@ class Sidebar extends React.Component {
       <div className="col s3">
         <ul className="collection with-header">
           <li className="collection-header"><h4>Kategori</h4></li>
-          <li className="collection-item"><a href="#!">Elektronik</a></li>
-          <li className="collection-item"><a href="#!">Rumah Tangga</a></li>
-          <li className="collection-item"><a href="#!">Mainan</a></li>
+          <li className="collection-item"><Link href="#!"><a>Elektronik</a></Link></li>
         </ul>
       </div>
     )
@@ -41,12 +38,9 @@ class Sidenav extends React.Component {
         <ul id="slide-out" className="sidenav">
           <li>
             <div className="user-view">
-              <div className="background">
-                <img src="images/office.jpg" />
-              </div>
-              <a href="#user"><img className="circle" src="images/yuna.jpg" /></a>
-              <a href="#name"><span className="white-text name">John Doe</span></a>
-              <a href="#email"><span className="white-text email">jdandturk@gmail.com</span></a>
+              <a href="#user"><i className="large material-icons">person</i></a>
+              <a href="#name"><span className="black-text name">John Doe</span></a>
+              <a href="#email"><span className="black-text email">jdandturk@gmail.com</span></a>
             </div></li>
           <li><a href="#!"><i className="material-icons">cloud</i>First Link With Icon</a></li>
           <li><a href="#!">Second Link</a></li>
