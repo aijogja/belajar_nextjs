@@ -1,12 +1,17 @@
 import React from 'react'
 import Link from 'next/link'
 
-export const Navbar = () => (
+
+// Ini adalah fungsi, nah untuk memparse props, masukkan sebagai parameter
+// Berbeda ketika dia menggunakan class yg extend dari react component,
+// dia langsung bisa diambil menggunakan this.props
+export const Navbar = (props) => (
   <nav>
     <div className="container nav-wrapper">
       <a href="/" className="brand-logo">Warungku</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
         <li><Link href="produk"><a>Produk</a></Link></li>
+        <li><Link href="keranjang"><a>Keranjang ({props.totalcart})</a></Link></li>
       </ul>
     </div>
   </nav>

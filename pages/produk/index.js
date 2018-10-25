@@ -19,10 +19,15 @@ class Produk extends React.Component {
 		this.setState({products: products.data})
 	}
 
+	addcart = () => {
+		const isi = this.props.totalcart + 1
+		this.props.ganticart(isi)
+	}
+
 	render() {
 		const { products } = this.state
 		return (
-			<Layout>
+			<Layout {...this.props}>
 				<div className="col s12">
 					{
 						products.map((product) => {
@@ -31,7 +36,7 @@ class Produk extends React.Component {
 									<div className="card">
 										<div className="card-image">
 											<img src="static/img/no-image.jpg" />
-											<a className="btn-floating halfway-fab waves-effect waves-light red"><i className="material-icons">add_shopping_cart</i></a>
+											<a className="btn-floating halfway-fab waves-effect waves-light red" onClick={this.addcart}><i className="material-icons">add_shopping_cart</i></a>
 										</div>
 										<div className="card-content">
 											<span className="card-title">{product.nama}</span>

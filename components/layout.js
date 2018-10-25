@@ -20,7 +20,7 @@ class Layout extends React.Component {
 	render() {
 		return (
 			<div className="body_flex">
-				<Navbar />
+				<Navbar {...this.props} />
 				<div className="main_flex container">
 					<div className="row">
 						{this.defaultBody()}
