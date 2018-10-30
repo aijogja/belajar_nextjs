@@ -15,7 +15,7 @@ class Keranjang extends React.Component {
           </div>
           <div className="card-stacked">
             <div className="card-content">
-              <span class="card-title">Xiaomi Redmi 3 </span>
+              <span className="card-title">Xiaomi Redmi 3 </span>
               <div>2000.000</div>
             </div>
             <div className="card-action">
